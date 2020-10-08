@@ -25,25 +25,33 @@ img {
 
 header {
   background-image: url("../images/anchors.svg");
+  background-color: #1e7c74;
   color: #fff;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: normal;
-  padding: 1rem;
+  padding: 1rem 0 0;
 }
 
 header strong,
 header p {
   margin: 0;
   font-weight: normal;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 
 .by {
   font-style: italic;
 }
 
-article div {
+main div {
   padding: 1rem;
+}
+
+hgroup {
+  background-color: #259f95;
+  padding: 0 1rem;
 }
 
 article header {
@@ -54,6 +62,13 @@ article header {
   background-image: none;
   border-radius: 0 0 6px 6px;
   color: #fff;
+  padding-bottom: 1rem;
+}
+
+article header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 h1 {
@@ -68,6 +83,10 @@ h2 {
   color: #fff;
   font-weight: normal;
   font-size: 1.75rem;
+}
+
+nav {
+  background-color: #259f95;
 }
 
 nav ul {
@@ -86,7 +105,7 @@ nav a {
   border: 0;
   border-radius: 6px;
   color: #fff;
-  padding: 0.5rem;
+  padding: .5rem;
   width: 2.5rem;
   height: 2.5rem;
 }
@@ -114,16 +133,16 @@ nav i {
   height: 100%;
 }
 
-article p {
+main p {
   margin: 0;
   text-indent: 1.3em;
 }
 
-article div :first-child {
+main div :first-child {
   text-indent: 0;
 }
 
-article div :first-child::first-line {
+main div :first-child::first-line {
   color: #1e7c74;
   font-style: italic;
 }
@@ -145,7 +164,7 @@ figcaption {
 }
 
 article footer {
-  background-color: #259f95;
+  background-color: #1e7c74;
   background-image: none;
   border-radius: 6px 6px 0 0;
   color: #fff;
@@ -157,4 +176,5 @@ footer {
   padding: 1rem;
   background-image: url("../images/anchors.svg");
   color: #fff;
+  background-color: #1e7c74;
 }
